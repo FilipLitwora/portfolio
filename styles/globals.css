@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+  width: 64px;
+}
+
+nav ul {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+nav ul li {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 60%;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.hero h2 {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  color: black;
+}
+.hero h3 {
+  max-width: 300px;
+  margin-top: 3rem;
+}
+
+aside {
+  width: calc(40% - 64px); /* 100% - (width of main) - (width of nav) */
+}
