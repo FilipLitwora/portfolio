@@ -2,18 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-nav {
-  width: 64px;
+body {
+  background: black;
 }
 
-nav ul {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+.bg-in-half {
+  background: linear-gradient(90deg, black 60%, black 40%);
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
 }
 
 nav ul li {
-  margin: 10px 0;
+  @apply mx-2;
   text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .bg-in-half {
+    background: linear-gradient(90deg, black 60%, rgb(168, 85, 247) 40%);
+  }
+
+  nav ul li {
+    @apply mx-5;
+  }
 }
 
 nav ul li a {
@@ -23,10 +43,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-}
-
-main {
-  width: 60%;
 }
 
 .hero h1,
@@ -42,8 +58,4 @@ main {
 .hero h3 {
   max-width: 300px;
   margin-top: 3rem;
-}
-
-aside {
-  width: calc(40% - 64px); /* 100% - (width of main) - (width of nav) */
 }
