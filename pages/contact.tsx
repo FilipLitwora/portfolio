@@ -41,7 +41,7 @@ const Contact: NextPage = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 1024 1024"
               className="h-6 w-6 inline-block mb-1"
               height="1em"
@@ -53,6 +53,7 @@ const Contact: NextPage = () => {
             :{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/filiplitwora/"
               className="hover:underline"
             >
@@ -63,7 +64,7 @@ const Contact: NextPage = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 16 16"
               height="1em"
               width="1em"
