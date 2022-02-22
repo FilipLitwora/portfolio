@@ -94,7 +94,7 @@ const Projects: NextPage = () => {
           technologies="React,
             Typescript, Next.js, TailwindCSS, Node.js, Nest.js, PostgreSQL"
           secondHeader="
-            My role in this project was to code 100% of frotnend and 90% of backend."
+            My role in this project was to code 100% of frotnend and 90% of backend, along with paymentwall integration."
           link="https://dev.ghast.io/"
           imagePath="/ghast.webp"
         />
