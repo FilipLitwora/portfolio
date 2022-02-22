@@ -24,9 +24,11 @@ const Home: NextPage = () => {
         </div>
       </main>
       <aside className="bg-purple-500 hidden md:flex p-5 md:w-[40%] h-full flex-col justify-center items-center">
-        <div className="bg-gray-100 p-5 rounded-xl">
-          <img src="/projects.webp" />
-        </div>
+        <Link href="/projects">
+          <div className="bg-gray-100 transition-all p-5 hover:p-3 rounded-xl">
+            <img src="/projects.webp" />
+          </div>
+        </Link>
         <Link href="/projects">
           <button className="bg-black px-5 py-3 mt-20 mb-40 font-bold text-white transition-transform transform hover:scale-105">
             See my projects

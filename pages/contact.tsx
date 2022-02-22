@@ -1,16 +1,18 @@
 import type { NextPage } from "next";
-import { FadeUp } from "../components/FadeUp";
 import Layout from "../components/Layout";
-import Nav from "../components/Nav";
 
 const Contact: NextPage = () => {
   return (
-    <Layout title="Contact" description="">
-      <div className="bg-black text-white w-full pl-20 pt-20">
-        <h1 className="ml-10 mt-5 md:ml-20 md:mt-20 font-bold text-8xl mb-[10%]">
+    <Layout
+      title="Contact"
+      description=""
+      className="bg-in-half text-white w-full overflow-x-hidden"
+    >
+      <div className="w-full pl-5 sm:pl-20 pt-5 sm:pt-20">
+        <h1 className="sm:ml-10 sm:mt-5 md:ml-20 md:mt-20 font-bold text-6xl sm:text-8xl mb-[10%]">
           Contact
         </h1>
-        <h3 className="text-4xl mt-20">Reach out to me on:</h3>
+        <h3 className="text-4xl mt-5 sm:mt-20">Reach out to me on:</h3>
         <div className="text-xl mt-2 ml-3">
           <p>
             <svg

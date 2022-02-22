@@ -15,14 +15,20 @@ const ProjectCard = ({
 }: any) => {
   return (
     <div className="sm:flex mb-28">
-      <div className="w-[60%] pl-5 sm:pl-10 md:pl-20">
+      <div className="sm:w-[60%] pl-5 sm:pl-10 md:pl-20">
         <div className="flex">
-          <h2 className="text-[2.8vw] font-semibold ml-[-2rem]">{number}</h2>
-          <h2 className="text-[2.8vw] font-semibold ml-[2rem]">{title}</h2>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold ml-[-1rem] sm:ml-[-2rem]">
+            {number}
+          </h2>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold ml-[1rem] sm:ml-[2rem]">
+            {title}
+          </h2>
         </div>
-        <div className="mt-10 md:ml-[5.5rem]">
-          <h3 className="text-lg max-w-[300px] font-semibold">{firstHeader}</h3>
-          <p className="text-gray-300 max-w-[400px]">
+        <div className="mt-10 ml-[2rem] md:ml-[4.5rem]">
+          <h3 className="text-xl max-w-full sm:max-w-[300px] font-semibold">
+            {firstHeader}
+          </h3>
+          <p className="text-gray-300 sm:max-w-[400px]">
             <span className="font-semibold">Tech Stack: </span>
             {technologies}
           </p>
@@ -34,14 +40,10 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-      <div className="w-[40%] p-5 flex flex-col justify-center">
+      <div className="sm:w-[40%] p-5 flex flex-col justify-center">
         <a href={link} target="__blank">
-          <div className="bg-gray-100 p-5 rounded-xl">
-            <img
-              src={imagePath}
-              alt="project image"
-              className="w-full transform  transition hover:translate-y-[-5px]"
-            />
+          <div className="bg-gray-100 transition-all p-5 hover:p-3 rounded-xl">
+            <img src={imagePath} alt="project image" className="w-full " />
           </div>
         </a>
       </div>
@@ -54,9 +56,9 @@ const Projects: NextPage = () => {
     <Layout
       title="Projects"
       description=""
-      className="bg-in-half text-white overflow-x-hidden"
+      className="bg-in-half text-white overflow-x-hidden ml-5 sm:ml-0"
     >
-      <h1 className="w-full ml-10 mt-5 md:ml-20 md:mt-20 font-bold text-8xl mb-[10%]">
+      <h1 className="w-full sm:ml-10 mt-5 md:ml-20 md:mt-20 font-bold text-6xl sm:text-8xl mb-[10%]">
         Projects
       </h1>
       <ProjectCard
