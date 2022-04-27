@@ -29,7 +29,7 @@ const Nav = () => {
           </li>
           <L href="/contact">Contact</L>
         </ul>
-        <div className="flex md:flex-col mb-2 mr-5 sm:mr-10 md:mr-0 md:mb-0 items-center md:justify-center">
+        <div className="hidden sm:flex md:flex-col mb-2 mr-5 sm:mr-10 md:mr-0 md:mb-0 items-center md:justify-center">
           <a
             rel="noreferrer"
             href="https://github.com/filiplitwora"
