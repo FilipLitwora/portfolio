@@ -4,8 +4,12 @@ import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
-    <Layout className="flex w-full" title="Home" description="">
-      <main className="bg-black w-full md:w-[60%] text-white">
+    <Layout
+      className="flex flex-col md:flex-row w-full"
+      title="Home"
+      description=""
+    >
+      <main className="bg-black w-full md:w-[50%] lg:w-[30%] text-white">
         <div className="ml-10 mt-5 md:ml-20 md:mt-0 hero h-full flex items-center">
           <div>
             <h2 className="leading-none">Hello, I&apos;m</h2>
@@ -23,15 +27,15 @@ const Home: NextPage = () => {
           </div>
         </div>
       </main>
-      <aside className="bg-purple-500 hidden md:flex p-5 md:w-[40%] h-full flex-col justify-center items-center">
+      <aside className="bg-purple-500 flex p-5 md:w-[50%] lg:w-[70%] h-full flex-col justify-center items-center">
         <Link href="/projects">
           <div className="bg-gray-100 transition-all p-5 hover:p-3 rounded-xl">
             <img src="/projects.webp" />
           </div>
         </Link>
         <Link href="/projects">
-          <button className="bg-black px-5 py-3 mt-20 mb-40 font-bold text-white transition-transform transform hover:scale-105">
-            See my projects
+          <button className="bg-black text-white px-5 py-3 mt-20 mb-40 font-bold transition-transform transform hover:scale-105">
+            See My Projects
           </button>
         </Link>
       </aside>

@@ -1,8 +1,6 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 import { FadeUp } from "../components/FadeUp";
 import Layout from "../components/Layout";
-import Nav from "../components/Nav";
 
 const ProjectCard = ({
   number,
@@ -61,41 +59,63 @@ const Projects: NextPage = () => {
       <h1 className="w-full sm:ml-10 mt-5 md:ml-20 md:mt-20 font-bold text-6xl sm:text-8xl mb-[10%]">
         Projects
       </h1>
+
       <ProjectCard
         number="01."
-        title="Hone.gg - Product website"
-        firstHeader="A website where you can buy a program that improves performance of your PC."
+        title="woo.itv.com - e-commerce website"
+        firstHeader="A website made for British media company ITV"
         technologies="React,
-            Typescript, Next.js, TailwindCSS, Node.js, Nest.js, PostgreSQL"
-        secondHeader="
-            My role in this project was to code 30% of frotnend along with
-            Xsolla integration, implement 90% of the backend, and to deploy it
-            to the cloud."
-        link="https://hone.gg/"
-        imagePath="/hone.webp"
+            Typescript, Next.js, TailwindCSS, Strapi"
+        secondHeader="This project was developed by me and 3 other devs. As I joined the team a bit later, my role was to code 20% of the frontend."
+        link="https://woo.itv.com/"
+        imagePath="/woo.webp"
       />
+
       <FadeUp>
+        <div className="flex items-center justify-center sm:w-[55%] ml-[2.5%] my-8">
+          <div className="h-[1px] w-[80%] bg-gray-300"></div>
+          <h3 className="mx-2 text-2xl font-semibold">2021</h3>
+          <div className="h-[1px] w-[80%] bg-gray-300"></div>
+        </div>
         <ProjectCard
           number="02."
+          title="Hone.gg - Product website"
+          firstHeader="A website where you can buy a program that improves performance of your PC."
+          technologies="React,
+            Typescript, Next.js, TailwindCSS, Node.js, Nest.js, PostgreSQL"
+          secondHeader="
+            My role in this project was to code 30% of frontend along with
+            Xsolla integration, implement 90% of the backend, and to deploy it
+            to the cloud."
+          link="https://hone.gg/"
+          imagePath="/hone.webp"
+        />
+        <ProjectCard
+          number="03."
           title="MPL.gg - Minecraft server website"
           firstHeader="A website for a fun minecraft server."
           technologies="React,
             Typescript, Next.js, TailwindCSS"
           secondHeader="
-            My role in this project was to code 100% of frotnend and to deploy it
+            My role in this project was to code 100% of frontend and to deploy it
             to the cloud."
           link="https://mpl.gg/"
           imagePath="/mpl.webp"
         />
+        <div className="flex items-center justify-center sm:w-[55%] ml-[2.5%] mb-8">
+          <div className="h-[1px] w-[80%] bg-gray-300"></div>
+          <h3 className="mx-2 text-2xl font-semibold">2020</h3>
+          <div className="h-[1px] w-[80%] bg-gray-300"></div>
+        </div>
         <ProjectCard
-          number="03."
+          number="04."
           title="Ghast.io - Product website"
           firstHeader="A website where you can buy a program that decreases lag and improves your internet connection."
           technologies="React,
             Typescript, Next.js, TailwindCSS, Node.js, Nest.js, PostgreSQL"
           secondHeader="
-            My role in this project was to code 100% of frotnend and 90% of backend, along with paymentwall integration."
-          link="https://dev.ghast.io/"
+            My role in this project was to code 100% of frontend and 90% of backend, along with paymentwall integration."
+          link="https://ghast.io/"
           imagePath="/ghast.webp"
         />
       </FadeUp>

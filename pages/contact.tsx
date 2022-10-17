@@ -6,7 +6,7 @@ const Contact: NextPage = () => {
     <Layout
       title="Contact"
       description=""
-      className="bg-in-half text-white w-full overflow-x-hidden"
+      className="text-white w-full overflow-x-hidden"
     >
       <div className="w-full pl-5 sm:pl-20 pt-5 sm:pt-20">
         <h1 className="sm:ml-10 sm:mt-5 md:ml-20 md:mt-20 font-bold text-6xl sm:text-8xl mb-[10%]">
