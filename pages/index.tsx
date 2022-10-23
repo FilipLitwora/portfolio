@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import projects from "../public/projects.webp";
 
 const Home: NextPage = () => {
   return (
@@ -30,7 +32,7 @@ const Home: NextPage = () => {
       <aside className="bg-purple-500 flex p-5 md:w-[50%] lg:w-[70%] h-full flex-col justify-center items-center">
         <Link href="/projects">
           <div className="bg-gray-100 transition-all p-5 hover:p-3 rounded-xl">
-            <img src="/projects.webp" />
+            <Image src={projects} />
           </div>
         </Link>
         <Link href="/projects">

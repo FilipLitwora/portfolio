@@ -1,6 +1,11 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import { FadeUp } from "../components/FadeUp";
 import Layout from "../components/Layout";
+import woo from "../public/woo.webp";
+import ghast from "../public/ghast.webp";
+import hone from "../public/hone.webp";
+import mpl from "../public/mpl.webp";
 
 const ProjectCard = ({
   number,
@@ -41,7 +46,7 @@ const ProjectCard = ({
       <div className="sm:w-[40%] p-5 flex flex-col justify-center">
         <a href={link} target="__blank">
           <div className="bg-gray-100 transition-all p-5 hover:p-3 rounded-xl">
-            <img src={imagePath} alt="project image" className="w-full " />
+            <Image src={imagePath} alt="project image" className="w-full" />
           </div>
         </a>
       </div>
@@ -68,7 +73,7 @@ const Projects: NextPage = () => {
             Typescript, Next.js, TailwindCSS, Strapi"
         secondHeader="This project was developed by me and 3 other devs. As I joined the team a bit later, my role was to code 20% of the frontend."
         link="https://woo.itv.com/"
-        imagePath="/woo.webp"
+        imagePath={woo}
       />
 
       <FadeUp>
@@ -88,7 +93,7 @@ const Projects: NextPage = () => {
             Xsolla integration, implement 90% of the backend, and to deploy it
             to the cloud."
           link="https://hone.gg/"
-          imagePath="/hone.webp"
+          imagePath={hone}
         />
         <ProjectCard
           number="03."
@@ -100,7 +105,7 @@ const Projects: NextPage = () => {
             My role in this project was to code 100% of frontend and to deploy it
             to the cloud."
           link="https://mpl.gg/"
-          imagePath="/mpl.webp"
+          imagePath={mpl}
         />
         <div className="flex items-center justify-center sm:w-[55%] ml-[2.5%] mb-8">
           <div className="h-[1px] w-[80%] bg-gray-300"></div>
@@ -116,7 +121,7 @@ const Projects: NextPage = () => {
           secondHeader="
             My role in this project was to code 100% of frontend and 90% of backend, along with paymentwall integration."
           link="https://ghast.io/"
-          imagePath="/ghast.webp"
+          imagePath={ghast}
         />
       </FadeUp>
     </Layout>
